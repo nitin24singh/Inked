@@ -1,0 +1,21 @@
+<div class="top">
+    <div class="container">
+        <div class="row"> 
+            <div class="col-xs-12 text-right">
+
+                <% if(currentUser) {%>
+                <p class="num username">HELLO <%= currentUser %> 👋
+                </p>
+                <% }%>
+                <ul class="fh5co-social">
+                    <% if(!currentUser) {%>
+                    <li><a href="/login">Log in</a></li>
+                    <% }%>
+                    <% if(currentUser) {%>
+                    <li><a href="/logout">Log Out</a></li>
+                    <% }%>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
